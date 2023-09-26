@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/V3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <title>Alchemy V3-30 Pro</title>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-transparent">
+        <div class="container-fluid">
+            <a href="./V3.html" style="width: 7%;">
+                <img src="./img/diving-logo.png" style="width: 70%;">
+            </a>
+            <!-- shop下拉菜单 -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">SHOP</i></a>
+                        <ul>
+                            <li><a href="./V3-30 plus.html"><b>Alchemy V3-30 Plus</b></a></li>
+                            <li><a href="./V3-1.html"><b>Alchemy V3</b></a></li>
+                            <li><a href="./V3-30 pro.html"><b>Alchemy V3-30 Pro</b></a></li>
+                            <li><a href="./V3-30.html"><b>Alchemy V3-30</b></a></li>
+                            <li><a href="./V3-pro.html"><b>Alchemy V3 Pro</b></a></li>
+                            <li><a href="./V3-s-30.html"><b>Alchemy S-30</b></a></li>
+                            <li><a href="./V3-s.html"><b>Alchemy S</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="./V3 about.html">
+                <span class="text-white ps-3 me-auto">ABOUT</span>
+            </a>
+
+            <i class="bi bi-cart3 ms-auto text-white" style="font-size: 20px;"></i>
+            <a href="./login.html">
+                <i class="bi bi-person text-white p-3" style="font-size: 20px;"></i>
+            </a>
+        </div>
+    </nav>
+    <img src="./img/v3-4.jpg" class="w-100">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <!-- 輪播圖 -->
+                <div id="apple" class="carousel slide">
+                    <!-- 下面三個指標icon -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#apple" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#apple" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="gold-image">
+                            <img src="./img/v3-30-pro金.jpg">
+                        </div>
+                        <div class="carousel-item" id="blue-image">
+                            <img src="./img/v3-30-pro都市藍.jpg">
+                        </div>
+                        <div class="carousel-item" id="orange-image">
+                            <img src="./img/v3-30-pro橘.jpg">
+                        </div>
+                        <div class="carousel-item" id="white-image">
+                            <img src="./img/v3-30-pro白.jpg">
+                        </div>
+                        <div class="carousel-item" id="black-image">
+                            <img src="./img/v3-30-pro黑.jpg">
+                        </div>
+                    </div>
+                    <!-- 上一張和下一張 -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#apple" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2 class="mt-5"><strong>Alchemy V3-30 Pro</strong></h2>
+                <p class="mt-4">NT$ 14300</p>
+                <p>認識一下顛覆自由潛水世界的碳纖維蛙鞋。徹底改變遊戲規則，深受這項運動最深的自由潛水員的青睞。</p>
+                <hr>
+                <label for="rail"><b>Logo Color</b></label>
+                <select id="rail" class="form-select" onchange="changeImage()">
+                    <option value="option1">請選擇一個選項</option>
+                    <option value="option2">金</option>
+                    <option value="option3">都市藍</option>
+                    <option value="option4">橘</option>
+                    <option value="option5">白</option>
+                    <option value="option6">黑</option>
+
+                </select>
+                <label for="level"><b>Blade Stiffness Level</b></label>
+                <select id="level" class="form-select">
+                    <option value="option1">請選擇一個選項</option>
+                    <option value="option2">Soft</option>
+                    <option value="option3">Medium/Soft</option>
+                    <option value="option4">Medium</option>
+                    <option value="option5">Medium/Hard</option>
+                    <option value="option6">Hard</option>
+                </select>
+                <label for="Pathos"><b>Footpockets</b></label>
+                <select id="Pathos" class="form-select">
+                    <option value="option1">請選擇一個選項</option>
+                    <option value="option2">Pathos 36-38</option>
+                    <option value="option3">Pathos 38-40</option>
+                    <option value="option4">Pathos 40-42</option>
+                    <option value="option5">Pathos 42-44</option>
+                    <option value="option6">Pathos 44-46</option>
+                </select>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                        <label for="num"><b>數量:</b></label>
+                        <button class="btn btn-secondary btn-sm mx-2" onclick="minus()">-</button>
+                        <input id="num" type="text" value="1" readonly style="width: 30px; text-align: center;">
+                        <button class="btn btn-secondary btn-sm mx-2" onclick="plus()">+</button>
+                    </div>
+                    <div>
+                        <label for="totalAmount"><b>總金額: $</b></label>
+                        <span id="totalAmount">14300</span>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary" onclick="submit()">加入購物車</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5" style="height: 330px;">
+            <div class="col-6">
+                <img src="./img/v3-5.jpg" style="width: 100%; height: 60%;">
+            </div>
+            <div class="col-6">
+                <img src="./img/v3-4..jpg" style="width: 100%; height: 60%;">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6">
+                <img src="./img/v3-8.jpg" class="w-100 h-100">
+            </div>
+            <div class="col-3">
+                <img src="./img/v3-7.jpg" class="w-100 h-100">
+            </div>
+            <div class="col-3">
+                <img src="./img/v3-10.jpg" class="w-100 h-100">
+            </div>
+        </div>
+
+        <div class="row mt-5 w-100">
+            <h3 class="text-center mb-5">相關商品</h3>
+            <div class="col-3">
+                <a href="./V3-pro.html">
+                    <div class="col-12">
+                        <img src="./img/v3-pro.jpg" class="w-100 shadow p-3 mb-5 bg-body rounded">
+                        <P class="text-dark"><strong>Alchemy V3 Pro</strong></P>
+                        <p>NT$ 13300</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="./V3-1.html">
+                    <img src="./img/v3-無.jpg" class="w-100 shadow p-3 mb-5 bg-body rounded">
+                    <p class="text-dark"><strong>Alchemy V3</strong></p>
+                    <p>NT$ 17300</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="./V3-s-30.html">
+                    <img src="./img/v3-s-30.jpg" class="w-100 shadow p-3 mb-5 bg-body rounded">
+                    <p class="text-dark"><strong>Alchemy S-30</strong></p>
+                    <p>NT$ 15400</p>
+                </a>
+            </div>
+            <div class="col-3">
+                <a href="./V3-30.html">
+                    <img src="./img/v3-30.jpg" class="w-100 shadow p-3 mb-5 bg-body rounded">
+                    <p class="text-dark"><strong>Alchemy V3-30</strong></p>
+                    <p>NT$ 18300</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class=" container mt-5">
+        <img src="./img/v3_logo.png" style="width: 30%; margin-left: 35%; margin-bottom: 5%; margin-top: 5%;">
+    </footer>
+    <script>
+        // 取得導覽列元素
+        const navbar = document.querySelector('.navbar');
+
+        // 設定滾動事件監聽器
+        window.addEventListener('scroll', function () {
+            // 取得目前滾動的垂直位置
+            const scrollPosition = window.scrollY;
+
+            // 如果滾動位置大於等於 100px，則添加 .navbar-solid 類別，使導覽列顯示
+            // 否則移除 .navbar-solid 類別，使導覽列透明
+            if (scrollPosition >= 100) {
+                navbar.classList.add('navbar-solid');
+            } else {
+                navbar.classList.remove('navbar-solid');
+            }
+        });
+
+        // 按下按鈕顯示總金額
+        function plus() {
+            var numElement = document.getElementById('num');
+            var currentNum = parseInt(numElement.value);
+            var updatedNum = currentNum + 1;
+            numElement.value = updatedNum;
+
+            calculateTotalAmount(updatedNum);
+        }
+
+        function minus() {
+            var numElement = document.getElementById('num');
+            var currentNum = parseInt(numElement.value);
+            if (currentNum > 1) {
+                var updatedNum = currentNum - 1;
+                numElement.value = updatedNum;
+
+                calculateTotalAmount(updatedNum);
+            }
+        }
+
+        function calculateTotalAmount(quantity) {
+            var price = 14300;
+            var totalAmount = price * quantity;
+            document.getElementById('totalAmount').innerText = totalAmount;
+        }
+
+        function submit() {
+            const railSelect = document.getElementById('rail');
+            const levelSelect = document.getElementById('level');
+            const pathosSelect = document.getElementById('Pathos');
+            const numInput = document.getElementById('num');
+            const totalAmount = document.getElementById('totalAmount').innerText;
+
+
+            const rail = railSelect.options[railSelect.selectedIndex].text;
+            const level = levelSelect.options[levelSelect.selectedIndex].text;
+            const pathos = pathosSelect.options[pathosSelect.selectedIndex].text;
+            const num = numInput.value;
+
+            const message = `Water Rail Color: ${rail}\nBlade Stiffness Level: ${level}\nFootpockets: ${pathos}\nQuantity: ${num}`;
+
+            showModal(message);
+            clearForm();
+        }
+
+        function showModal(message) {
+            var modalTitle = document.querySelector('.modal-title');
+            var modalBody = document.querySelector('.modal-body');
+            var totalAmount = document.getElementById('totalAmount').innerText;
+
+            modalTitle.innerText = '最後確認';
+            modalBody.innerText = message + '\n\n' + '總金額: $' + totalAmount;
+
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        }
+
+        function clearForm() {
+            document.getElementById('rail').selectedIndex = 0;
+            document.getElementById('level').selectedIndex = 0;
+            document.getElementById('Pathos').selectedIndex = 0;
+            document.getElementById('num').value = 1;
+            document.getElementById('totalAmount').innerText = '14300';
+        }
+
+        // 按下顏色紐對應到相對的圖片
+        function changeImage() {
+            var selectElement = document.getElementById("rail");
+            var selectedValue = selectElement.value;
+
+            var goldImage = document.getElementById("gold-image");
+            var blueImage = document.getElementById("blue-image");
+            var orangeImage = document.getElementById("orange-image");
+            var whiteImage = document.getElementById("white-image");
+            var blackImage = document.getElementById("black-image");
+
+            goldImage.classList.remove("active");
+            blueImage.classList.remove("active");
+            orangeImage.classList.remove("active");
+            whiteImage.classList.remove("active");
+            blackImage.classList.remove("active");
+
+            if (selectedValue === "option2") {
+                goldImage.classList.add("active");
+                blueImage.classList.remove("active");
+                orangeImage.classList.remove("active");
+                whiteImage.classList.remove("active");
+                blackImage.classList.remove("active");
+            } else if (selectedValue === "option3") {
+                goldImage.classList.remove("active");
+                blueImage.classList.add("active");
+                orangeImage.classList.remove("active");
+                whiteImage.classList.remove("active");
+                blackImage.classList.remove("active");
+            } else if (selectedValue === "option4") {
+                goldImage.classList.remove("active");
+                blueImage.classList.remove("active");
+                orangeImage.classList.add("active");
+                whiteImage.classList.remove("active");
+                blackImage.classList.remove("active");
+
+            } else if (selectedValue === "option5") {
+                goldImage.classList.remove("active");
+                blueImage.classList.remove("active");
+                orangeImage.classList.remove("active");
+                whiteImage.classList.add("active");
+                blackImage.classList.remove("active");
+            } else if (selectedValue === "option6") {
+                goldImage.classList.remove("active");
+                blueImage.classList.remove("active");
+                orangeImage.classList.remove("active");
+                whiteImage.classList.remove("active");
+                blackImage.classList.add("active");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/lazyfish.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <title>LAZYFISH</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://www.youtube.com/embed/7O2_fUvRRE0" title="LAZYFISH形象風格 X 野人七號部落村長｜KID 林柏昇"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // 當視窗大小變更時，調整影片大小
+        window.addEventListener('resize', resizeVideo);
+
+        function resizeVideo() {
+            var frame = document.getElementById('video-frame');
+            var container = document.getElementById('video-container');
+
+            var containerWidth = container.offsetWidth;
+            var containerHeight = container.offsetHeight;
+
+            // 調整影片寬度和高度
+            frame.style.width = containerWidth + 'px';
+            frame.style.height = containerHeight + 'px';
+        }
+
+        // 頁面載入完成後立即調整影片大小
+        window.addEventListener('load', resizeVideo);
+    </script>
+</body>
+
+</html>

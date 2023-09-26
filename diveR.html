@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/diveR.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <title>diveR</title>
+</head>
+
+<body>
+    <div>
+        <img src="./img/diveR封面.jpg" style="width: 100%;">
+    </div>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg  fixed-top navbar-transparent">
+        <div class="container-fluid">
+            <a href="./購物網.html" style="width: 7%;">
+                <img src="./img/diving-logo.png" style="width: 70%;">
+            </a>
+            <!-- shop下拉菜单 -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">SHOP</i></a>
+                        <ul>
+                            <li><a href="./diveR.html"><b>DiveR</b></a></li>
+                            <li><a href="./lazyfish.html"><b>LazyFish</b></a></li>
+                            <li><a href="./V3.html"><b>AlcheMy V3</b></a></li>
+                            <li><a href="./molchanovs.html"><b>Molchanovs</b></a></li>
+                            <li><a href="./fish魚式.html"><b>魚式設計</b></a></li>
+                            <li><a href="./prussian.html"><b>Prussian Blue</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="./diveR about.html">
+                <span class="text-white ps-3">ABOUT</span>
+            </a>
+
+            <i class="bi bi-cart3 ms-auto text-white" style="font-size: 20px;"></i>
+            <a href="./login.html">
+                <i class="bi bi-person text-white p-3" style="font-size: 20px;"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <img src="./img/DineR-logo.jpg" class="container">
+
+        <!-- 關於DiveR -->
+        <div class="container row">
+            <div class="col">
+                <img src="./img/diveR-3.jpg" style="width: 100%; float:left; margin-right: 30px;">
+            </div>
+            <div class="col">
+                <h3 style="margin-top: 20%;">
+                    <span><strong>關於DiveR &nbsp;</strong></span>
+                    <span style="font-size: 70%;"><u>來自澳洲的頂級專業長蛙</u></span>
+                </h3>
+                <p class="mt-3">來自<span class="text-danger">澳洲</span>的<strong>頂級專業長蛙DiveR</strong>，
+                    DiveR在2000年初由澳洲<strong>漁獵冠軍RayPowell</strong>所開創，
+                    以製造出最佳性能及最美的板片作為理念，將蛙鞋板成為藝術創作，
+                    其至今已成為全球自由潛水員的首選之一，更享譽「海之后」美名。</p>
+                <p><b>追求卓越、挑戰及創新是DiveR 的品牌精神</b></p>
+                <p>在複合材料領域不斷地精進技術，採用定制的混合環氧樹脂系統及航空級織物相結合而成，
+                    每塊板片都由手工製作，其注重細節和質量，在嚴苛的環境條件下由專業的自由潛水員進行了18個月的測試，
+                    強大的耐用度及高度的靈活性使 DiveR
+                    成為專業人士的選擇。他們獨特的設計將負荷轉移到較大的肌肉群上，而不是集中在腳踝，脛骨或膝蓋上。此設計大大降低疲勞感，並可延長每次潛水的時間，讓您在水中更能自在地發揮本能</p>
+            </div>
+        </div>
+
+        <!-- 介紹 -->
+        <div class="row mt-5 container" style="height: 330px;">
+            <div class="col-4">
+                <h3><strong>介紹</strong></h3>
+                <p class="mt-3">DiveR 擁有多款圖面設計，使你輕易地找到自己心目中的理想之板片。每雙碳纖蛙鞋板皆由精細印刷而成，
+                    主要以金色大logo為其特色。以金色大logo象徵著水下耀眼的光芒及堅定且不被打到之潛水員精神。
+                    亦有偏光logo設計，使滿版設計不被其logo影響。</p>
+                <p>DiveR 也與<b>藝術家 Naomigittoes </b>合作不斷推出多款圖面設計，深得顧客喜愛，成為顧客們心目中最理想的板片。</p>
+            </div>
+            <div class="col-4 ">
+                <!-- 輪播圖 -->
+                <div id="apple" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                    <!-- 下面三個指標icon -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#apple" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#apple" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/diveR-4.jpg" style="height: 50%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/diveR-5.jpg" style="height: 50%;">
+                        </div>
+                    </div>
+                    <!-- 上一張和下一張 -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#apple" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./img/diveR-6.jpg" style="height: 56.5%;">
+            </div>
+        </div>
+
+        <!-- DiveR pure carbon blade－純碳纖板 -->
+        <div class="container row mt-5">
+            <div class="col">
+                <img src="./img/diveR-7-carbon.jpg" style="width: 100%;">
+            </div>
+            <div class="col">
+                <h3 style="margin-top: 20%;"><strong>DiveR pure carbon blade－純碳纖板</strong></h3>
+                <p class="mt-3"><strong>DiveR Pure carbon blade</strong>
+                    以最頂尖的碳纖維技術，經過多次專業人士的精密計算及使用回饋報告，打造世界上最理想之板片之一。
+                    擁有完美的強度表現及回饋感受度。此專業獨特的設計，將輕鬆帶你下至您從未有過的深度，探索未知的領域。
+                    板片成功經過1,000,000轉以上的測試，產品耐久度飽受顧客肯定。純碳纖板片設計也較玻璃纖維板片更為輕量化。
+                </p>
+            </div>
+        </div>
+
+        <!-- 商品欄 -->
+        <div class="row justify-content-center mt-5">
+            <h3 class="text-center text-secondary"><strong>DiveR</strong></h3>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <a href="./diveR-鯨魚.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-鯨之舞動.jpg" class="w-100 mb-3">
+                                    <p class="text-dark">DiveR-鯨之舞動</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="./diveR-海神.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-海洋之神.jpg" class="w-100">
+                                    <p class="text-dark">DineR-海洋之神(藍)</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <a href="./diveR-鯊魚.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-萬靈之鯊.jpg" class="w-100 mb-3">
+                                    <p class="text-dark">DineR-萬靈之鯊</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="./diveR-金海神.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-海洋之神(金).jpg" class="w-100">
+                                    <p class="text-dark">DineR-海洋之神(金)</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <a href="./diveR-章魚.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-章魚海錨.jpg" class="w-100 mb-3">
+                                    <p class="text-dark">DineR-章魚海錨</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="./diveR-礁石.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-礁石之生.jpg" class="w-100">
+                                    <p class="text-dark">DineR-礁石之生</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row">
+                    <a href="./diveR-玫瑰.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-反叛玫瑰.jpg" class="w-100 mb-3">
+                                    <p class="text-dark">DineR-反叛玫瑰</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="./diveR-海龜.html">
+                        <div class="card" style="background-color: #686868a7;">
+                            <div class="card-body">
+                                <div class="col-12 text-center">
+                                    <img src="./img/diveR-虹道之龜.jpg" class="w-100">
+                                    <p class="text-dark">DineR-虹道之龜</p>
+                                    <p>NT$16850</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部輪播圖 -->
+    <div id="banana" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="4000">
+        <!-- 下面三個指標icon -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banana" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banana" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banana" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/diveR-1.jpg" style="height: 50%;">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/diveR-8.jpg" style="height: 50%;">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/diveR-2.jpg" style="height: 50%;">
+            </div>
+        </div>
+        <!-- 上一張和下一張 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#banana" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banana" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer class=" container">
+        <img src="./img/DineR-logo.jpg" style="margin-left: 5%;">
+        <div class="row mb-5">
+            <div class="col" style="margin-left: 300px;">
+                <h3>聯絡我們</h3>
+                <span>電話 / 02-8273-3629</span>
+                <br>
+                <span>郵件 / hydra@seamons.co</span>
+                <br>
+                <span>店面 / 236 新北市土城區慶利街3號</span>
+                <a href="https://goo.gl/maps/p9KF1ensS5QQnqAXA">
+                    <i class="bi bi-geo-fill text-dark"></i>
+                </a>
+                <br>
+                <span>
+                    時間 / 週二 - 週五 14:00 - 20:30
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;週六 - 週日 14:00 - 20:00
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;週一公休
+                </span>
+            </div>
+            <div class="col">
+                <h3>訂閱我們得到專屬優惠！</h3>
+                <input type="email" class="w-75" id="email" placeholder="Your email">
+                <div id="emailEvent" class="text-danger"></div>
+                <br>
+                <button class="btn btn-dark " onclick="submit()">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 取得導覽列元素
+        const navbar = document.querySelector('.navbar');
+
+        // 設定滾動事件監聽器
+        window.addEventListener('scroll', function () {
+            // 取得目前滾動的垂直位置
+            const scrollPosition = window.scrollY;
+
+            // 如果滾動位置大於等於 100px，則添加 .navbar-solid 類別，使導覽列顯示
+            // 否則移除 .navbar-solid 類別，使導覽列透明
+            if (scrollPosition >= 100) {
+                navbar.classList.add('navbar-solid');
+            } else {
+                navbar.classList.remove('navbar-solid');
+            }
+        });
+
+        // 按下subscribe檢查格式是否正確
+        function submit() {
+            var emailInput = document.getElementById('email');
+            var emailEvent = document.getElementById('emailEvent');
+
+            // 檢查格式
+            var emailRegex = /^\w+([\.-]?\w)*@\w+([\.-]?\w)+(\.\w{2,3})+$/;
+            var emailValid = emailRegex.test(emailInput.value);
+
+            if (emailValid) {
+                alert('訂閱成功!');
+                document.getElementById('email').value = '';
+                emailEvent.innerText = '';
+
+            } else {
+                emailEvent.innerText = '請確認 email 格式';
+            }
+        }
+    </script>
+</body>
+
+</html>

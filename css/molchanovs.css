@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(209, 209, 209);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+}
+
+/* 設定導覽列尚未滑動的顏色 */
+.navbar-transparent {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* 設定下滑為導覽列的顏色 */
+.navbar-solid {
+    background-color: #00000044;
+}
+
+/* 設定導覽列的高度為 9% */
+.navbar {
+    height: 9%;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* 設定輪播圖 */
+.carousel-item>img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.imgw {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 子孫選擇器，選擇到div內所有的a */
+div a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* 子孫選擇器，選擇到ul內所有的li */
+ul li {
+    display: inline-block;
+}
+
+/* 子孫選擇器，選擇到ul內所有的li，並且當鼠標停留在上面時，更改樣式 */
+ul li:hover {
+    background: #555;
+}
+
+/* 當滑鼠懸停在 <li> 元素上時，它的子元素<ul>將以塊級元素的形式顯示出來。 */
+ul li:hover ul {
+    display: block;
+}
+
+/* 位於 <ul> 元素的子元素<li>下的子元素<ul>，
+            這通常用於創建下拉菜單或子菜單的效果，默認情況下，子菜單是隱藏的 */
+ul li ul {
+    position: absolute;
+    width: 500px;
+    display: none;
+}
+
+/* 位於 <ul> 元素的子元素<li>下的子元素<ul>下的子元素<li>，
+            這通常用於設置子菜單項目的樣式。 */
+ul li ul li {
+    background: #555;
+    display: block;
+}
+
+/* 位於 <ul> 元素的子元素<li>下的子元素<ul>下的子元素<li>下的子元素<a>，
+                使用 !important 來確保它的優先級最高，優先於其他可能存在的樣式規則。 */
+/* 這通常用於將子菜單中的<a>元素設置為塊級元素顯示，以實現特定的佈局或樣式需求。 */
+ul li ul li a {
+    display: block !important;
+}
+
+/* 滑鼠懸停在 <ul> 元素的子元素<li>下的子元素<ul>下的子元素<li>，*/
+/* 這通常用於創建菜單或子菜單項目的懸停效果，以提供視覺反饋給用戶，當用戶將滑鼠懸停在項目上時，背景顏色變化 */
+ul li ul li:hover {
+    background: #666;
+}

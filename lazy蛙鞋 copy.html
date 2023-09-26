@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/lazyfish.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <title>商品详情</title>
+    <style>
+        /* 样式 */
+        .product-image {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .product-details {
+            display: none;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            z-index: 9999;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .quantity span {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <img src="./img/product-1.jpg" class="product-image" alt="商品1">
+        <div class="product-details">
+            <img src="./img/diveR-萬靈之鯊2.jpg" alt="商品1">
+            <div class="quantity">
+                <button id="decrease">-</button>
+                <span id="quantity">1</span>
+                <button id="increase">+</button>
+            </div>
+            <p>其他选项</p>
+        </div>
+    </div>
+
+    <script>
+        // 获取相关元素
+        const productImage = document.querySelector('.product-image');
+        const productDetails = document.querySelector('.product-details');
+        const decreaseBtn = document.getElementById('decrease');
+        const increaseBtn = document.getElementById('increase');
+        const quantitySpan = document.getElementById('quantity');
+
+        // 点击商品图片时显示商品详情
+        productImage.addEventListener('click', function () {
+            productDetails.style.display = 'block';
+        });
+
+        // 点击增加按钮时增加数量和价格
+        increaseBtn.addEventListener('click', function () {
+            let quantity = parseInt(quantitySpan.innerText);
+            quantity += 1;
+            quantitySpan.innerText = quantity;
+            // 这里可以根据需要更新价格
+        });
+
+        // 点击减少按钮时减少数量和价格，最低为1
+        decreaseBtn.addEventListener('click', function () {
+            let quantity = parseInt(quantitySpan.innerText);
+            if (quantity > 1) {
+                quantity -= 1;
+                quantitySpan.innerText = quantity;
+                // 这里可以根据需要更新价格
+            }
+        });
+    </script>
+</body>
+
+</html>
